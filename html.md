@@ -1,5 +1,4 @@
 #HTML 编码规范
-===
 ##目的
 
 本文档定义了CSS的编码规范，旨在推进代码的可维护性和可读性，方便后期的优化和维护。**用最少的css和最优的dom实现高质量的html页面**
@@ -56,8 +55,10 @@
   * `input[text], input[radio], input[checkbox]`等<br />
   \<input>标签可以为用户定义一个可提供输入数据的区域,类型可以是单行文本输入、单选框 、 复选框或者隐藏域等等。它没有对应的结束标签,但必须用\<input />的方式自关闭。另外:类型为 radio 和 checkbox 的时候,必须为每个选择项的内容使用 label 标签的 for 属性,对应到操作区域 中,使其具有同操作区域一致的要求。如:
   
-  		<input type=”radio” id=”female” /><label for=” female”>女性</label>
-
+  	```
+  	<input type=”radio” id=”female” /><label for=” female”>女性</label>
+  	
+	```
 	也可以:
 	  
 		<label><input type="radio" />选项</label>
