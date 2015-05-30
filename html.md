@@ -57,7 +57,6 @@
   
   	```
   	<input type=”radio” id=”female” /><label for=” female”>女性</label>
-  	
 	```
 	也可以:
 	  
