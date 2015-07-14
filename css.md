@@ -261,6 +261,10 @@ hack 是一把双刃剑，原则上是：最大程度减少hack的使用
   * 父元素或者祖元素指定z-index
 * [IE6/7] 空\<a\>标签在 ie6，ie7下无法点击的bug，解决方法：
   * 给\<a\>标签设置一个background，然后设置透明度为0
+* [IE6/7]当某块级元素设置了 margin-top ，并且之前存在着可被渲染的绝对定位元素时，其 margin-top 在 IE6 IE7会失效。 
+  * 调换这两个元素的位置
+  * or 相邻元素可以采用padding-top来替代margin-top
+  * or 在他们中间插入一个空标签实现占位
 * [chrome] chrome字体不能小于12px,解决方法：
   * -webkit-text-size-adjust:none;
   
