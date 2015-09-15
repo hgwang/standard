@@ -265,6 +265,8 @@ hack 是一把双刃剑，原则上是：最大程度减少hack的使用
   * 调换这两个元素的位置
   * or 相邻元素可以采用padding-top来替代margin-top
   * or 在他们中间插入一个空标签实现占位
+* [IE6/7]margin负值部分无法看到
+  * 元素加上_position:relative;*zoom:1;
 * [chrome] chrome字体不能小于12px,解决方法：
   * -webkit-text-size-adjust:none;
   
